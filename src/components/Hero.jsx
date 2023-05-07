@@ -7,39 +7,38 @@ import { styles } from "../styles";
 
 
 
-
-
 //relative w-full h-screen mx-auto | flex w-screen h-screen min-h-screen flex-col items-center justify-center relative
 const Hero = () => {
   return (
     <div className={`flex w-screen h-screen min-h-screen flex-col items-center justify-center relative`}>
-      
-    
 
         {/* Heading position */}
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl ml-12 mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        {/* ball + line */}
+        
+        {/* ball + gradient line + fading line */}
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-5 h-5 rounded-full bg-[#08B6F9]' />
+          <div className='flex flex-col justify-center neon-gradient'></div>
+          <div className='flex flex-col justify-center neonFade-gradient'></div>
         </div>
         
         {/* Text in header and subHeader */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Steven</span>
+            Hi, I'm <span className='text-[#08B6F9]'>Steven</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop 3D visuals, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
-          
         </div>
-        
       </div>
-      
+
+     
+
+      {/* Spline 3d Object */}
       <Wrapper>
         <Spline
             className='spline'
@@ -73,10 +72,10 @@ const Wrapper = styled.div`
   // font-size: 16px;
   // text-align: center;
   // color: palevioletred;
-    position: relative;
+     position: relative;
   
    .spline {
-      margin-top: 500px
+      margin-top: 1000px
       // position: relative;
   //   top: 450px;
   //   margin-top: 200px;

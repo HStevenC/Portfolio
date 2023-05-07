@@ -43,6 +43,29 @@
   );
 }
 
+.neon-gradient {
+  width: 3px;
+  height: 1000px;
+  background: linear-gradient(
+    180deg,
+    #08B6F9  0%,
+    #6C56EF  33.57%,
+    #1306DD  65.86%,
+    #AA0EB2  100%
+  );
+}
+.neonFade-gradient {
+  width: 3px;
+  height: 300px;
+  background: #AA0EB2;
+  background: linear-gradient(-90deg, #AA0EB2 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #AA0EB2  0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
