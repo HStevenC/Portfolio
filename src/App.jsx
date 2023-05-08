@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Projects, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 //bg-hero-pattern
 const App = () => {
   return (
@@ -16,12 +16,13 @@ const App = () => {
         
         <div className='relative z-0'>
           <About />
-          <Experience />
+          <Projects/>
+          {/* <Experience />
           <Tech />
           <Works />
           <Feedbacks />
           <Contact />
-          <StarsCanvas />
+          <StarsCanvas /> */}
         </div>
       </div>
     </BrowserRouter>
