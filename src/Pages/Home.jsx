@@ -10,7 +10,9 @@ const Home = () => {
         </div>
        
         <div className='relative z-0'>
-          <About id='about-section' />
+          <div className='about-margin' >
+            <About id='about-section' />
+          </div>
           <Projects/>
           {/* <Tech/> */}
           <Contact/>              
