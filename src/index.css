@@ -12,10 +12,12 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+
 .about-margin{
-  padding-top: 0 !important;
-  margin-top: 500px !important;
+  padding-top: 1;
+  margin-top: 0px ;
 }
+
 .vertical-timeline::before {
   width: 3px;
   height: 1400px;
