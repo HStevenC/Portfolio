@@ -1,28 +1,19 @@
 import React from 'react'
+import { About, Contact, Projects, Feedbacks, Hero, Tech, Navbar, Works, StarsCanvas } from "../components";
 
 const Home = () => {
   return (
     <div className='relative z-0 bg-primary'>
         
         <div className=' bg-cover bg-no-repeat bg-center'>
-          <Hero />
-          <Navbar/>
-          
+          <Hero />               
         </div>
-
-        
-        
+       
         <div className='relative z-0'>
-          <About />
+          <About id='about-section' />
           <Projects/>
           {/* <Tech/> */}
-          <Contact/>
-          {/* <Experience />
-          <Tech />
-          <Works />
-          <Feedbacks />
-          <Contact />
-          <StarsCanvas /> */}
+          <Contact/>              
         </div>
       </div>
   )

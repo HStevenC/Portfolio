@@ -1,7 +1,7 @@
-// import Home from './';
-// import Tech from './';
+import Home from './Home';
+import NoPage from './NoPage';
 
-// export {
-//   Home,
-//   Tech,
-// }
+export {
+  Home,
+  NoPage,
+}

@@ -10,7 +10,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
-
+  
   return (
     <nav
       className={`
@@ -19,8 +19,9 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-8x1 mx-auto'>
+        {/* Navbar Header Link */}
       <Link
-          to='/Tech'
+          to='/'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
@@ -34,6 +35,7 @@ const Navbar = () => {
           </p>
         </Link>
 
+          {/* All the other NavBar links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map( (link) => (
             <li
@@ -43,13 +45,16 @@ const Navbar = () => {
                   ? "text-whie"
                   : "text-secondary"
               } hover:text-white text-[19px] font-medium`}
-              onClick={ () => setActive(link.title)}
+              onClick={ () => { 
+                setActive(link.title);
+              }}
             >
               <a href={`#${link.id}`}> {link.title} </a>
+
             </li>
           ))}
         </ul>
-
+              {/* Smaller device Navbar */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -72,7 +77,8 @@ const Navbar = () => {
                   setToggle(!toggle);
                 }}
               >
-                <a href={`#${link.id}`}> {link.title} </a>
+                <a href={`#${link.id}`}> {link.title} 
+                </a>
               </li>
             ))}
             </ul>
