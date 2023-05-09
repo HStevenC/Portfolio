@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter  } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-8x1 mx-auto'>
       <Link
-          to='/'
+          to='/Tech'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");

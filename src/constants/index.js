@@ -115,51 +115,55 @@ import {
   ];
   
   const experiences = [
+    
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Queuing System | OuterEdge LA Hackathon",
+      tech: "PostgreSQL, React, Express, NodeJS, Prisma, Render, REST, JWT Auth",
       icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      iconBg: "#46B5FE",
+      textBgColor: "#0A1835",
+      date: "March 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Collaborated with a team to design and integrate database schemas for a queuing system",
+        "Developed frontend logic to ensure secure access control and redirect unauthorized and authorized users to appropriate page",
+        "Implemented a user-friendly purchase page with concurrent user limits and a timer, optimizing system performance and user experience",
+        "Developed frontend functionality to redirect users based on real-time backend data, enabling efficient and secure access to web application resources",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Interactive Game",
+      tech: "PostgreSQL, Express, React, NodeJS, OpenAI, REST, JWT Auth",
       icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      iconBg: "#8071DF",
+      textBgColor: "#241C31",
+      date: "November 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+        "Developed a text-based web game using the P.E.R.N. stack",
+        "Implemented AI to handle storytelling",
+        "Set up JWT with PostgreSQL to allow for multiple separate users",
+        "Utilized PostgreSQL for temporary data to keep story coherent" ,     ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Discord Monitor",
+      tech: "Node Js, Forever, PM2, Discord.js",
       icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      iconBg: "#5C3EF0",
+      textBgColor: "#13042A",
+      date: "June 2022 - July 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Pulled data from websites and discord servers through API and processed data to specification",
+        "Implement PM2 and Forever",
+        "Maintained code as incoming data changes",
+        "Utilized open source dependencies to pull data in real time",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Traffic Light Controller",
+      tech: "C,  Assembly, MPLA",
       icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      iconBg: "#DE3EF0",
+      textBgColor: "#1B0220",
+      date: "Mar 2022 - April 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -167,6 +171,7 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    
   ];
   
   const testimonials = [
