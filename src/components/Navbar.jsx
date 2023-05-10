@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-8x1 mx-auto'>
         {/* Navbar Header Link */}
-      <Link
+        <Link
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
@@ -35,6 +35,8 @@ const Navbar = () => {
           </p>
         </Link>
 
+        
+        
           {/* All the other NavBar links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map( (link) => (
@@ -42,7 +44,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title 
-                  ? "text-whie"
+                  ? "text-white"
                   : "text-secondary"
               } hover:text-white text-[19px] font-medium`}
               onClick={ () => { 
@@ -54,6 +56,19 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* <div
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 2148);
+          }}
+        >
+          <p className='sm:block hidden text-white text-[18px] font-bold cursor-pointer flex '>
+            Projects
+          </p>
+        </div> */}
+
               {/* Smaller device Navbar */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

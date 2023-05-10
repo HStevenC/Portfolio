@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div >
 
-        {/* Heading position */}
+        {/* Hero position */}
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl ml-12 mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
