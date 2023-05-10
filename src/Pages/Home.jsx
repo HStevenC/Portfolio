@@ -4,7 +4,7 @@ import { About, Contact, Projects, Feedbacks, Hero, Tech, Navbar, Works, StarsCa
 const Home = () => {
   return (
     <div className='relative z-0 bg-primary'>
-
+      <StarsCanvas/>   
       <Spline />
       <div className=' bg-cover bg-no-repeat bg-center pointer-events-none'>
         <Hero /> 
@@ -13,7 +13,8 @@ const Home = () => {
           <About/>
           <Projects/>
           {/* <Tech/> */}
-          <Contact/>              
+          <Contact/> 
+                    
         </div>
       </div>
   )
