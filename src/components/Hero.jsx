@@ -17,8 +17,8 @@ const Hero = () => {
         {/* ball + gradient line + fading line */}
         <div className='flex flex-col justify-center items-center mt-5 relative'>
           <div className='w-5 h-5 rounded-full bg-[#08B6F9]' />
-          <div className='flex flex-col justify-center neon-gradient'></div>
-          <div className='flex flex-col justify-center neonFade-gradient'></div>
+          <div className='flex flex-col neon-gradient'></div>
+          <div className='flex flex-col neonFade-gradient'></div>
         </div>
         
         {/* Text in header and subHeader */}

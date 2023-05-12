@@ -8,6 +8,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { EarthCanvas } from './canvas';
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -18,9 +19,39 @@ const Contact = () => {
 const [loading, setLoading] = useState(false);
 
 const handleChange = (e) => {
-
+  const {name, value} = e.target;
+  setForm({...form, [name] : value })
 };
+
 const handleSubmit = (e) => {
+  e.preventDefault();
+  setLoading(true);
+  emailjs.send(
+    "service_osuqsmg", 
+    "template_1pppkh4",
+    {
+      from_name: form.name,
+      to_name: 'Steven',
+      from_email: form.email,
+      to_email: 'tubbymop@gmail.com',
+      message: form.message,
+    },
+    "gwlyMV424JnVX_Bky"
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Thank You. I will get back to you as soon as possible.');
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong.')
+    })
 
 };
 
@@ -57,7 +88,7 @@ const handleSubmit = (e) => {
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'> Your Name </span>
+            <span className='text-white font-medium mb-4'> Your Email </span>
             <input 
               type="email" 
               name="email"
@@ -70,7 +101,7 @@ const handleSubmit = (e) => {
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'> Your Name </span>
+            <span className='text-white font-medium mb-4'> Your Message </span>
             <textarea 
               name="message"
               value={form.message}

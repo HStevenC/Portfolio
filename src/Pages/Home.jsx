@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='relative z-0 bg-primary'>
       <StarsCanvas/>   
-      <Spline />
+      {/* <Spline /> */}
       <div className=' bg-cover bg-no-repeat bg-center pointer-events-none'>
         <Hero /> 
       </div> 
