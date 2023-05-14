@@ -2,17 +2,24 @@ import React from 'react'
 import Spline from '@splinetool/react-spline';
 import styled from "styled-components";
 import { styles } from "../styles";
+import { useMediaQuery } from 'react-responsive';
 
+//https://prod.spline.design/fHSFs1CucN88MZIU/scene.splinecode  main
+//https://prod.spline.design/FH6ZGV7c9gXHXIS8/scene.splinecode test
 const spline = () => {
+  const isSmallDevice = useMediaQuery({ maxWidth: 768 });
+
   return (
     <>
     {/* Spline 3d Object */}
-    <div className={`flex w-screen h-screen min-h-screen flex-col items-center justify-center relative`}>
-    <Wrapper >
-      <Spline
-          className='spline'
-          scene="https://prod.spline.design/fHSFs1CucN88MZIU/scene.splinecode"     
-        />
+    <div>
+    <Wrapper className={`flex flex-col w-screen h-screen min-h-screen items-center justify-center relative`}> 
+        {isSmallDevice ? null : 
+          <Spline
+            className='spline'
+            scene="https://prod.spline.design/fHSFs1CucN88MZIU/scene.splinecode"
+          />
+        }
     </Wrapper>
     </div>
     </>
@@ -20,77 +27,53 @@ const spline = () => {
 }
 
 const Wrapper = styled.div`
-  // font-size: 16px;
-  // text-align: center;
-  // color: palevioletred;
-  // position: relative;
-  
-   .spline {
-  //   margin-top: 1000px
-  //   position: relative;
-  //   top: 1000px;
-  //   margin-top: 200px;
-  //   z-index:100;
 
-  //   @media (max-width: 2024px){
-  //     transform: scale(1) translateX(-5%);
-  //     right:auto;
-  //     left:50%
-  //     margin-left: -50vw
-  //   }
-  //   @media (max-width: 1824px){
-  //     transform: scale(0.9) translateX(-10%);
-  //   }
+
+
+.spline {
+  position: absolute;
+  //  width: 200%;
+  // height: 100%
+  // overflow-x: hidden;
+
+  // @media (max-width: 576px){
+  //   display: none;
+  // }
+   
+  @media (min-width: 390px){
+    transform: scale(0.25) translateX(-1100px);
     
-  //   @media (max-width: 1824px){
-  //     transform: scale(0.9) translateX(-15%);
-  //   }
-    
-    @media (max-width: 1624px){
-      transform: scale(0.8);
-    }
-    
-    @media (max-width: 1424px){
-      transform: scale(0.7);
-    }
-    
-  //   @media (max-width: 1324px){
-  //     transform: scale(0.7) translateX(-40%);
-  //   }
-    @media (max-width: 1224px){
-      transform: scale(0.6);
-    }
-  //   @media (max-width: 1124px){
-  //     transform: scale(0.65) translateX(-65%);
-  //   }
-    @media (max-width: 1024px){
-      transform: scale(0.5) 
-    }
-  //   @media (max-width: 924px){
-  //     transform: scale(0.6) translateX(-95%);
-  //   }
-    @media (max-width: 824px){
-      transform: scale(0.4);
-    }
-  //   @media (max-width: 724px){
-  //     transform: scale(0.4);
-  //     margin-left: -65vw;
-  //   }
-  //   @media (max-width: 624px){
-  //     transform: scale(0.4);
-  //     margin-left: -75vw;
-  //   }
-  //   @media (max-width: 575px){
-  //     transform: scale(0.4);
-  //     margin-left: -85vw;
-  //   }
-  //   @media (max-width: 424px){
-  //     transform: scale(0.3);
-  //     margin-left: -110vw;
-  //   }
   }
+  @media (min-width: 600px){
+    transform: scale(0.4) translateX(-1000px);
+    
+  }
+  @media (min-width: 824px){
+    transform: scale(0.5) translateX(-850px);
+  }
+  @media (min-width: 1024px){
+    transform: scale(0.6) translateX(-700px);
+  }
+  @media (min-width: 1224px){
+    transform: scale(0.7) translateX(-600px);
+  }
+  @media (min-width: 1524px){
+    transform: scale(0.8) translateX(-500px);
+  }
+  @media (min-width: 1754px){
+    transform: scale(0.9) translateX(-400px);
+  }
+  @media (min-width: 1954px){
+    transform: scale(1) translateX(-300px);
+  }
+   
+    
+    
+    
+   
 
-  
+}
+
 `;
 
 export default spline

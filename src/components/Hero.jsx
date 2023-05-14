@@ -24,11 +24,22 @@ const Hero = () => {
         {/* Text in header and subHeader */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#08B6F9]'>Steven</span>
+            <div className="static-texts">
+              Hi, I'm <span className='text-[#08B6F9]' >Steven</span>
+            </div>
+
+            <span className='text-[#08B6F9]'>
+              <ul className="dynamic-texts">
+                {/* <li><span>Steven</span></li> */}
+                {/* <li><span>Huan</span></li> */}
+              </ul>
+            </span>
+
           </h1>
+          
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Computer Engineering student <br className='sm:block hidden'/>
-            .................................
+            A Computer Engineering Student <br className='sm:block hidden'/>
+            
           </p>
         </div>
       </div>

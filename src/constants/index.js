@@ -114,14 +114,27 @@ import {
     },
   ];
   
-  const experiences = [
-    
+  const projects = [
+    {
+      title: "Personal Site",
+      tech: "React, Three.js, Render, Spline",
+      icon: meta,
+      iconBg: "#46B5FE",
+      textBgColor: "#0A1835",
+      date: "Mar 2022 - April 2022",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
     {
       title: "Queuing System | OuterEdge LA Hackathon",
       tech: "PostgreSQL, React, Express, NodeJS, Prisma, Render, REST, JWT Auth",
       icon: starbucks,
-      iconBg: "#46B5FE",
-      textBgColor: "#0A1835",
+      iconBg: "#6666ff",
+      textBgColor: "#000033",
       date: "March 2023",
       points: [
         "Collaborated with a team to design and integrate database schemas for a queuing system",
@@ -172,36 +185,10 @@ import {
       ],
     },
     
+    
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
-  const projects = [
+  const experiences = [
     {
       name: "Car Rent",
       description:
@@ -267,4 +254,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

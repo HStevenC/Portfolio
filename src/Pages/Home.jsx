@@ -1,13 +1,18 @@
 import React from 'react'
 import { About, Contact, Projects, Feedbacks, Hero, Tech, Navbar, Works, StarsCanvas, Spline } from "../components";
+import { useMediaQuery } from 'react-responsive';
+
+
 
 const Home = () => {
+  
   return (
     <div className='relative z-0 bg-primary'>
       <StarsCanvas/>   
-      {/* <Spline /> */}
+      <Spline/>
       <div className=' bg-cover bg-no-repeat bg-center pointer-events-none'>
         <Hero /> 
+        
       </div> 
         <div className='relative z-0'>     
           <About/>
@@ -16,7 +21,7 @@ const Home = () => {
           <Contact/> 
                     
         </div>
-      </div>
+    </div>
   )
 }
 

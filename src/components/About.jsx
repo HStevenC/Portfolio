@@ -52,14 +52,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
-        I'm a senior in I'm a senior in I'm a senior in I'm a senior in I'm a senior in 
+        As a senior Computer Engineering student at California State Polytechnic University, Pomona, I embody a hands-on approach to learning, with a strong emphasis on practical program development and hands-on experimentation with electronic components. Through actively building real-world applications and exploring the intricacies of hardware, I have cultivated my skills in creating innovative solutions and adeptly problem-solving within the dynamic field of computer engineering.
 
       </motion.p>
 
