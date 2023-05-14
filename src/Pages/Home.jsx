@@ -17,7 +17,7 @@ const Home = () => {
         <div className='relative z-0'>     
           <About/>
           <Projects/>
-          {/* <Tech/> */}
+          <Tech/>
           <Contact/> 
                     
         </div>
