@@ -121,14 +121,15 @@ import {
       icon: meta,
       iconBg: "#46B5FE",
       textBgColor: "#0A1835",
-      date: "Mar 2022 - April 2022",
+      date: "May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implemented an interactive and visually stunning personal website using React, leveraging its component-based architecture to create reusable UI elements and manage the website's state effectively.",
+        "Employed spline-based animations, providing a visually engaging and intuitive user interface.",
+        "Leveraged the Render platform to deploy and host the website, ensuring high performance, scalability, and reliable uptime, allowing visitors to access the website seamlessly.",
+        "Utilized Three.js, a powerful JavaScript library for creating 3D graphics in the browser, to incorporate captivating and immersive 3D elements, enhancing the overall visual experience of the website.",
       ],
     },
+    // Employed spline-based animations to create smooth and fluid transitions between sections of the website, providing a visually engaging and intuitive user interface.
     {
       title: "Queuing System | OuterEdge LA Hackathon",
       tech: "PostgreSQL, React, Express, NodeJS, Prisma, Render, REST, JWT Auth",
