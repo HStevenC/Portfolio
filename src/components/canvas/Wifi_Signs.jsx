@@ -5,23 +5,24 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const Earth = () => {
+const Wifi_signs = () => {
   // import earth scene
-  const earth = useGLTF('./public/planet/scene.gltf');
+  const signs = useGLTF('./public/signs/scene.gltf');
 
   //passed custom geometry and how its rendered
   return (
     <primitive
-      object={earth.scene}
-      scale={2.5}
+      object={signs.scene}
+      scale={1.5}
       position-y={0}
+      position-x={3}
       rotation-y={0}
     />
   );
 };
 
 
-const EarthCanvas = () => {
+const Wifi_signsCanvas = () => {
   return(
     <Canvas
       shadows
@@ -42,10 +43,10 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth/>
+        <Wifi_signs/>
         <Preload all />
       </Suspense>
     </Canvas>
   );
 };
-export default EarthCanvas;
+export default Wifi_signsCanvas;

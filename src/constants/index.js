@@ -117,7 +117,7 @@ import {
   const projects = [
     {
       title: "Personal Site",
-      tech: "React, Three.js, Render, Spline",
+      tech: "React, Three.js, framer, Render, Spline",
       icon: meta,
       iconBg: "#46B5FE",
       textBgColor: "#0A1835",
@@ -165,10 +165,10 @@ import {
       textBgColor: "#13042A",
       date: "June 2022 - July 2022",
       points: [
-        "Pulled data from websites and discord servers through API and processed data to specification",
+        "Aggregated data from websites and discord servers through API and processed data to specification",
         "Implement PM2 and Forever",
         "Maintained code as incoming data changes",
-        "Utilized open source dependencies to pull data in real time",
+        "Utilized open source dependencies to aggregated data in real time",
       ],
     },
     {
