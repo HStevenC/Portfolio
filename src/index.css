@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +86,21 @@
     width: 2px;
     height: 500px;
   };
+  @media screen and (max-height: 768px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 350px;
+  };
+  @media screen and (max-height: 568px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 250px;
+  };
+  @media screen and (max-height: 468px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 200px;
+  };
   /* animation: animate 6s ; */
 }
 /* @keyframes animate {
@@ -109,7 +133,22 @@
     /* CSS rules for screens with a maximum width of 768px */
     width: 2px;
     height: 200px;
-  }
+  };
+  @media screen and (max-height: 768px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 160px;
+  };
+  @media screen and (max-height: 568px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 100px;
+  };
+  @media screen and (max-height: 468px) {
+    /* CSS rules for screens with a maximum width of 768px */
+    width: 2px;
+    height: 100px;
+  };
 }
 
 .green-pink-gradient {

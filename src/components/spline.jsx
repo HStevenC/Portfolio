@@ -7,14 +7,19 @@ import { useMediaQuery } from 'react-responsive';
 //https://prod.spline.design/fHSFs1CucN88MZIU/scene.splinecode  main
 //https://prod.spline.design/FH6ZGV7c9gXHXIS8/scene.splinecode test
 const spline = () => {
-  const isSmallDevice = useMediaQuery({ maxWidth: 768 });
+  const isSmallDevice = useMediaQuery({ maxWidth: 1068 });
 
   return (
     <>
     {/* Spline 3d Object */}
     <div>
     <Wrapper className={`flex flex-col w-screen h-screen min-h-screen items-center justify-center relative`}> 
-        {isSmallDevice ? null : 
+        {isSmallDevice ?
+          <Spline 
+            className='splinesm' 
+            scene="https://prod.spline.design/2UDr40IsmI03S33u/scene.splinecode" 
+          /> 
+          : 
           <Spline
             className='spline'
             scene="https://prod.spline.design/fHSFs1CucN88MZIU/scene.splinecode"
@@ -67,13 +72,48 @@ const Wrapper = styled.div`
     transform: scale(1) translateX(-300px);
   }
    
-    
-    
-    
-   
+}
 
+.splinesm {
+  position: absolute;
+  //  width: 200%;
+  // height: 100%
+  // overflow-x: hidden;
+
+  // @media (max-width: 576px){
+  //   display: none;
+  // }
+
+  //WIDTH
+
+  @media (min-width: 290px){
+    transform: scale(.9) translateY(250px);
+    
+  }
+  @media (min-width: 390px){
+    transform: scale(1) translateY(250px);
+    
+  }
+  @media (min-width: 500px){
+    transform: scale(1.2) translateX(100px)  translateY(150px);
+  }
+  @media (min-width: 600px){
+    transform: scale(1.2) translateX(220px)  translateY(300px);
+    
+  }
+  @media (min-width: 800px){
+    transform: scale(1.2) translateX(250px)  translateY(350px);
+  }
+  @media (min-width: 900px){
+    transform: scale(1.5) translateX(300px)  translateY(450px);
+  }
+
+// Height
+
+  
 }
 
 `;
+
 
 export default spline

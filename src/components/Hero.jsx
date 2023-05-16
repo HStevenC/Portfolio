@@ -13,14 +13,13 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl ml-12 mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        
-        {/* ball + gradient line + fading line */}
-        <div className='flex flex-col justify-center items-center mt-5 relative'>
+
+         {/* ball + gradient line + fading line */}
+         <div className='flex flex-col justify-center items-center mt-5 relative'>
           <div className='w-5 h-5 rounded-full bg-[#08B6F9]' />
           <div className='flex flex-col neon-gradient'></div>
-          <div className='flex flex-col neonFade-gradient'></div>
+          <div className=' neonFade-gradient'></div>
         </div>
-        
         {/* Text in header and subHeader */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
@@ -42,6 +41,10 @@ const Hero = () => {
             
           </p>
         </div>
+
+       
+        
+        
       </div>
 
       
