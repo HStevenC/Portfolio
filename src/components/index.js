@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Spline from './Spline';
 import CanvasLoader from './Loader';
+import Header from './Header';
 
 export {
   Hero,
@@ -25,4 +26,5 @@ export {
   Projects,
   Spline,
   CanvasLoader,
+  Header,
 }
