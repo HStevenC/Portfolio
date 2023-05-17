@@ -8,20 +8,25 @@ const Home = () => {
   
   return (
     <div className='relative z-0 bg-primary'>
+      <Navbar/>
       <StarsCanvas/> 
       <Header />  
       <Spline/>
       <div className=' bg-cover bg-no-repeat bg-center pointer-events-none'>
         {/* <Hero />  */}
-        
       </div> 
       
         <div className='relative z-0'>     
-          <About/>
-          <Projects/>
-          {/* <Tech/> maybe in about page for more details*/}
-          <Contact/> 
-                    
+          <div id='about'>
+            <About/>
+          </div>
+          <div id='project'>
+           <Projects/>
+          </div>
+          <div id='contact'>
+            <Contact /> 
+          </div>
+           {/* <Tech/> maybe in about page for more details*/}      
         </div>
     </div>
   )
