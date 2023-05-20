@@ -153,7 +153,7 @@ import {
       date: "November 2022",
       points: [
         "Developed a text-based web game using the P.E.R.N. stack",
-        "Implemented AI to handle storytelling",
+        "Implemented AI to ensure unique adventures",
         "Set up JWT with PostgreSQL to allow for multiple separate users",
         "Utilized PostgreSQL for temporary data to keep story coherent" ,     ],
     },

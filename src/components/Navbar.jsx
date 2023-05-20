@@ -4,7 +4,7 @@ import { Link, BrowserRouter  } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
-
+import bubble_sound from '../assets/bubble_sound.mp3';
 
 const Navbar = () => {
   
@@ -12,6 +12,9 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
   
+  function play_bubble(){
+    new Audio(bubble_sound).play();
+  }
   return (
     <nav
       className={`
@@ -26,6 +29,7 @@ const Navbar = () => {
           className='flex items-center gap-2'
           onClick={() => { 
             setActive("");
+            play_bubble();
             window.scrollTo(0, 0);       
           }}
         >
