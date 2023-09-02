@@ -7,10 +7,11 @@ import { useEffect } from "react";
 
 
 const App = () => {
-  useEffect( () => {
-    ReactGA.initialize('G-W0ER081JHJ');
+  ReactGA.initialize('G-W0ER081JHJ');
+
+  useEffect( () => {  
     ReactGA.pageview(window.location.pathname + window.location.search);
-    console.log("Pageview sent");
+    //console.log("Pageview sent");
   }, []);
   return (
     <BrowserRouter>
