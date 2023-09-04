@@ -20,8 +20,8 @@ const ExperienceCards = () => {
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Image
-                src='src\assets\Lottify.gif'
-                alt='Green double couch with wooden legs'
+                src='public\public\Lottify.gif'
+                alt='image'
                 borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
