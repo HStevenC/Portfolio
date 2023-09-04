@@ -25,7 +25,7 @@ const ExperienceCards = () => {
                 borderRadius='lg'
                 />
                 <Stack mt='6' spacing='3'>
-                <Heading size='md' className='text-white text-[24px] font-bold'>Lottify</Heading>
+                <Heading size='md' className='text-white text-[24px] font-bold'>Lottify | Intern</Heading>
                 <Text className='text-white mt-2 list-disc ml-5 space-y-2'>
                     Collaborated closely with a cross-functional team using  web3 technology in developing a platform aimed at enhancing the liquidity of bluechip NFTs.
                 </Text>
