@@ -20,7 +20,7 @@ const ExperienceCards = () => {
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Image
-                src='public\public\Lottify.gif'
+                src='https://s11.gifyu.com/images/SgrEZ.gif'
                 alt='image'
                 borderRadius='lg'
                 />
