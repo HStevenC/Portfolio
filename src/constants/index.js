@@ -116,6 +116,18 @@ import {
   
   const projects = [
     {
+      title: "Icebreak (Ongoing)",
+      tech: "Express.js, AWS S3",
+      icon: meta,
+      iconBg: "#46B5FE",
+      textBgColor: "#0A1835",
+      date: "Aug 2023",
+      points: [
+        "A platform for organizations to interact with their members. A central hub for members to be always updated on the latest events while providing features to incentivize member growth",
+        "Utilized AWS S3 to reliably store images and potentially other types of data for Icebreak."
+      ],
+    },
+    {
       title: "Personal Site",
       tech: "React, Three.js, framer, Render, Spline",
       icon: meta,
@@ -191,7 +203,7 @@ import {
   
   const experiences = [
     {
-      name: "Car Rent",
+      name: "Lottify",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [

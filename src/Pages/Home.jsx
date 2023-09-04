@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Contact, Projects, Feedbacks, Hero, Tech, Navbar, Works, StarsCanvas, Spline, Header } from "../components";
+import { About, Contact, Projects, Feedbacks, Hero, Tech, Navbar, Works, StarsCanvas, Spline, Header, Experience } from "../components";
 import { useMediaQuery } from 'react-responsive';
 
 
@@ -19,6 +19,9 @@ const Home = () => {
         <div className='relative z-0'>     
           <div id='about'>
             <About/>
+          </div>
+          <div id='experience'>
+            <Experience/>
           </div>
           <div id='project'>
            <Projects/>

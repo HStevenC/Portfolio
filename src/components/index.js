@@ -10,7 +10,7 @@ import Contact from './Contact';
 import Spline from './Spline';
 import CanvasLoader from './Loader';
 import Header from './Header';
-
+import Experience from './Experience'
 export {
   Hero,
   Navbar,
@@ -27,4 +27,5 @@ export {
   Spline,
   CanvasLoader,
   Header,
+  Experience,
 }

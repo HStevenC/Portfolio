@@ -1,13 +1,14 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import { BrowserRouter, Route, Routes, Link  } from "react-router-dom";
+import { About } from "./";
 import {motion} from 'framer-motion';
 import { styles } from "../styles";
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import { projects } from '../constants';
-
+import './styles.css';
 
 const ProjectsCard = ({projects}) => (
     // Elements in the Vertical Line '#1d1836'
@@ -53,7 +54,8 @@ const ProjectsCard = ({projects}) => (
 );
 
 const Projects = () => {
-  return (
+
+    return (
     <> 
         {/* Heading with textVariant for animation */}
         <motion.div variants={textVariant()}>
@@ -65,13 +67,15 @@ const Projects = () => {
         <div className='mt-20 flex flex-col'>
             <VerticalTimeline>
                 {/* Map each experieces to a ProjectCard */}
-                {projects.map((projects, index) => (
+                {projects.slice(0, 5).map((projects, index) => (
                     <ProjectsCard key={index} projects={projects}/>
                 ))}
+              
             </VerticalTimeline>
         </div>
+        <Link to="/projects" className='custom-link' >Show More</Link>
     </>
-  )
+    )
 }
 
 export default SectionWrapper(Projects, "project")
