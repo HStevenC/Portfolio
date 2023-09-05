@@ -21,7 +21,7 @@ const ExperienceCards = () => {
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Box>
-                    <video autoPlay muted loop>
+                    <video autoPlay muted loop playsInline>
                         <source src={Lottify} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
