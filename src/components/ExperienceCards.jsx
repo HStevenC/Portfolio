@@ -11,19 +11,22 @@ import {
     Text,
     ButtonGroup,
     Divider,
-    Center
+    Center,
+    Box
 } from '@chakra-ui/react'
-import Lottify from '../assets/Lottify.gif'
+import Lottify from '../assets/Lottify.mp4'
 const ExperienceCards = () => {
   return (
     <Center>
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
-                <Image
-                src= {Lottify}
-                alt='image'
-                borderRadius='lg'
-                />
+                <Box>
+                    <video autoPlay muted loop>
+                        <source src={Lottify} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </Box>
+                
                 <Stack mt='6' spacing='3'>
                 <Heading size='md' className='text-white text-[24px] font-bold'>Lottify | Intern</Heading>
                 <Text className='text-white mt-2 list-disc ml-5 space-y-2'>
