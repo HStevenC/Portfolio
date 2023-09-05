@@ -13,14 +13,14 @@ import {
     Divider,
     Center
 } from '@chakra-ui/react'
-
+import Lottify from '../assets/Lottify.gif'
 const ExperienceCards = () => {
   return (
     <Center>
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Image
-                src='https://s11.gifyu.com/images/SgrEZ.gif'
+                src= {Lottify}
                 alt='image'
                 borderRadius='lg'
                 />
