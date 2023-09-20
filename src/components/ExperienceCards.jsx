@@ -21,7 +21,7 @@ const ExperienceCards = () => {
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Box>
-                    <img src={Lottify}/> 
+                    <img src={Lottify} alt="image"/> 
                 </Box>
                 
                 <Stack mt='6' spacing='3'>
