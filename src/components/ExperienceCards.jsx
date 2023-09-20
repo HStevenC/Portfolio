@@ -14,17 +14,14 @@ import {
     Center,
     Box
 } from '@chakra-ui/react'
-import Lottify from '../assets/Lottify.mp4'
+import Lottify from '../assets/Lottify.gif'
 const ExperienceCards = () => {
   return (
     <Center>
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Box>
-                    <video autoPlay muted loop playsInline>
-                        <source src={Lottify} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <img src={Lottify}/> 
                 </Box>
                 
                 <Stack mt='6' spacing='3'>
