@@ -14,14 +14,14 @@ import {
     Center,
     Box
 } from '@chakra-ui/react'
-import Lottify from '../assets/Lottify.gif'
-const ExperienceCards = () => {
+import Lottify from '../../public/public/gif/Lottify.gif' 
+const ExperienceCards = () => { 
   return (
     <Center>
         <Card maxW='100%' bg='#0A1835'>
             <CardBody>
                 <Box>
-                    <img src={Lottify} alt="image"/> 
+                    <img src={Lottify} alt="image" />
                 </Box>
                 
                 <Stack mt='6' spacing='3'>
